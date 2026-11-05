@@ -564,7 +564,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Number retained from your uploaded booking script.
     // Confirm it is the correct business WhatsApp number.
-    const whatsappNumber = "9225174813";
+    const whatsappNumber = "8482839144";
 
     const url =
       "https://wa.me/" +
