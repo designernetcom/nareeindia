@@ -202,7 +202,7 @@
                     <div class="carousel-item active">
                       <div class="nh-featured-card">
                         <img
-                          src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=85"
+                          src="img/threading.jpg"
                           alt="Beauty and nail care"
                           class="nh-featured-image"
                         />
@@ -220,8 +220,49 @@
                       </div>
                     </div>
 
-                    <!-- SERVICE 2 -->
                     <div class="carousel-item">
+                      <div class="nh-featured-card">
+                        <img
+                          src="img/saree-draping.jpg"
+                          alt="Facial and skincare"
+                          class="nh-featured-image"
+                        />
+
+                        <div class="nh-featured-info">
+                          <span>02 / DRAPING</span>
+                          <h3>Saree Draping</h3>
+                          <a
+                            href="#qb-service-picker"
+                            aria-label="Book Saree services"
+                          >
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="nh-featured-card">
+                        <img
+                          src="img/hair-studio.avif"
+                          alt="Facial and skincare"
+                          class="nh-featured-image"
+                        />
+
+                        <div class="nh-featured-info">
+                          <span>03 / HAIR STUDIO</span>
+                          <h3>Hair Styling</h3>
+                          <a
+                            href="#qb-service-picker"
+                            aria-label="Book Hair services"
+                          >
+                            <i class="bi bi-arrow-up-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- SERVICE 2 -->
+                    <!-- <div class="carousel-item">
                       <div class="nh-featured-card">
                         <img
                           src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"
@@ -230,7 +271,7 @@
                         />
 
                         <div class="nh-featured-info">
-                          <span>02 / HANDS & FEET</span>
+                          <span>04 / HANDS & FEET</span>
                           <h3>Manicure & Pedicure</h3>
                           <a
                             href="#qb-service-picker"
@@ -240,7 +281,7 @@
                           </a>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
 
                     <!-- SERVICE 3 -->
                     <div class="carousel-item">
@@ -252,7 +293,7 @@
                         />
 
                         <div class="nh-featured-info">
-                          <span>03 / SKINCARE</span>
+                          <span>04 / SKINCARE</span>
                           <h3>Facial & Skin Glow</h3>
                           <a
                             href="#qb-service-picker"
@@ -324,6 +365,141 @@
         <div class="nh-bottom-label">SELF-CARE SHOULD FEEL SIMPLE</div>
       </section>
 
+      <!-- NAAREE SERVICE COLLECTION -->
+
+      <section class="naaree-collection" id="naaree-collection">
+        <div class="container">
+          <!-- SECTION HEADING -->
+          <div class="nc-heading text-center">
+            <span class="nc-eyebrow">
+              <i class="bi bi-stars"></i>
+              NAAREE BEAUTY COLLECTION
+            </span>
+
+            <h2>
+              Beautifully styled.
+              <em>Thoughtfully pampered.</em>
+            </h2>
+          </div>
+
+          <!-- MAIN CATEGORY TABS -->
+          <div class="nc-tabs" role="tablist" aria-label="Beauty categories">
+            <!-- HAIR STUDIO TAB -->
+            <button
+              class="nc-tab active"
+              type="button"
+              data-nc-tab="hair"
+              role="tab"
+              aria-selected="true"
+              aria-controls="nc-hair"
+              id="nc-tab-hair"
+            >
+              <i class="bi bi-scissors"></i>
+              Hair Studio
+            </button>
+
+            <!-- SAREE DRAPING TAB -->
+            <button
+              class="nc-tab"
+              type="button"
+              data-nc-tab="saree"
+              role="tab"
+              aria-selected="false"
+              aria-controls="nc-saree"
+              id="nc-tab-saree"
+            >
+              <i class="bi bi-flower1"></i>
+              Saree Draping
+            </button>
+          </div>
+
+          <!-- =====================================
+         HAIR STUDIO
+    ====================================== -->
+          <div
+            class="nc-panel active"
+            id="nc-hair"
+            role="tabpanel"
+            aria-labelledby="nc-tab-hair"
+          >
+            <div class="nc-panel-head">
+              <span class="nc-label"> NAAREE HAIR STUDIO </span>
+              <h3>Find Your Perfect Hairstyle</h3>
+            </div>
+
+            <!-- HAIR STUDIO TWO TYPES -->
+            <div class="nc-hair-types">
+              <!-- HAIR STYLE -->
+              <button
+                type="button"
+                class="nc-hair-type active"
+                data-hair-type="hairstyle"
+                aria-pressed="true"
+              >
+                <i class="bi bi-scissors"></i>
+
+                <span>Hair Style</span>
+
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+
+              <!-- IN CURL / OUT CURL -->
+              <button
+                type="button"
+                class="nc-hair-type"
+                data-hair-type="curl"
+                aria-pressed="false"
+              >
+                <i class="bi bi-wind"></i>
+
+                <span>In Curl / Out Curl</span>
+
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </div>
+
+            <!-- DYNAMIC HAIR SERVICE CARDS -->
+            <div class="row g-3" id="nc-hair-list"></div>
+          </div>
+
+          <!-- =====================================
+         SAREE DRAPING
+    ====================================== -->
+          <div
+            class="nc-panel"
+            id="nc-saree"
+            role="tabpanel"
+            aria-labelledby="nc-tab-saree"
+            hidden
+          >
+            <div class="nc-saree-layout">
+              <!-- LEFT IMAGE -->
+              <div class="nc-saree-image">
+                <img
+                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85"
+                  alt="Traditional saree styling"
+                  loading="lazy"
+                />
+              </div>
+
+              <!-- RIGHT CONTENT -->
+              <div class="nc-saree-content">
+                <span class="nc-label"> SAREE DRAPING </span>
+
+                <h3>Elegance in Every Drape.</h3>
+
+                <p>Saree Draping</p>
+
+                <a href="#booking-services" class="nc-main-btn">
+                  Enquire Now
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- DIWALI FACIAL OFFERS -->
       <section class="naaree-festive-offers" id="diwali-offers">
         <div class="container">
@@ -389,7 +565,7 @@
           >
             <div class="row g-4">
               <!-- FACIAL 1 -->
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-6 col-md-6">
                 <article class="nfo-card">
                   <div class="nfo-card-image">
                     <img
@@ -401,20 +577,56 @@
                   </div>
 
                   <div class="nfo-card-body">
-                    <span class="nfo-category">O3+ FACIAL</span>
-                    <h3>O3+ Anti-Ageing Special</h3>
-                    <p>
-                      Targets the appearance of fine lines and wrinkles,
-                      supports hydration and promotes a youthful-looking glow.
-                    </p>
+                    <!-- <span class="nfo-category">O3+ FACIAL</span> -->
+                    <h3>K-Glass Skin Facial</h3>
 
-                    <div class="nfo-meta">
-                      <span><i class="bi bi-clock"></i> 1 hr 45 min</span>
-                      <span><i class="bi bi-list-check"></i> 4 steps</span>
+                    <!-- PACKAGE SERVICES LIST -->
+                    <div class="nfo-services-list">
+                      <div class="nfo-list-heading">
+                        <span class="nfo-heading-line"></span>
+                        <h4>What's Included</h4>
+                      </div>
+
+                      <ul class="nfo-inclusions">
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Waxing (Full arm,Full legs,Underarms - Rica)
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Manicure &amp; Pedicure (Classic)
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Threading (Eyebrow, Upperlips, Forehead)
+                          </span>
+                        </li>
+                      </ul>
                     </div>
 
+                    <!-- <div class="nfo-meta">
+                      <span><i class="bi bi-clock"></i> 1 hr 45 min</span>
+                      <span><i class="bi bi-list-check"></i> 4 steps</span>
+                    </div> -->
+
                     <div class="nfo-card-footer">
-                      <strong>₹1,399</strong>
+                      <strong>₹3,957</strong>
                       <a href="#qb-service-picker"
                         >Book Now <i class="bi bi-arrow-up-right"></i
                       ></a>
@@ -424,7 +636,7 @@
               </div>
 
               <!-- FACIAL 2 -->
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-6 col-md-6">
                 <article class="nfo-card">
                   <div class="nfo-card-image">
                     <img
@@ -436,20 +648,45 @@
                   </div>
 
                   <div class="nfo-card-body">
-                    <span class="nfo-category">O3+ FACIAL</span>
-                    <h3>Gold Infusion Peel-Off Facial</h3>
-                    <p>
-                      Helps reduce the appearance of fine lines, improve skin
-                      elasticity and revive dull-looking skin.
-                    </p>
+                    <!-- <span class="nfo-category">O3+ FACIAL</span> -->
+                    <h3>O3+ Gold Infusion Facial</h3>
 
-                    <div class="nfo-meta">
-                      <span><i class="bi bi-clock"></i> 1 hour</span>
-                      <span><i class="bi bi-list-check"></i> 4 steps</span>
+                    <div class="nfo-services-list">
+                      <div class="nfo-list-heading">
+                        <span class="nfo-heading-line"></span>
+                        <h4>What's Included</h4>
+                      </div>
+
+                      <ul class="nfo-inclusions">
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Manicure &amp; Pedicure (Classic)
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Threading (Eyebrow, Upperlips, Forehead)
+                          </span>
+                        </li>
+                      </ul>
                     </div>
 
+                    <!-- <div class="nfo-meta">
+                      <span><i class="bi bi-clock"></i> 1 hour</span>
+                      <span><i class="bi bi-list-check"></i> 4 steps</span>
+                    </div> -->
+
                     <div class="nfo-card-footer">
-                      <strong>₹2,200</strong>
+                      <strong>₹2,799</strong>
                       <a href="#qb-service-picker"
                         >Book Now <i class="bi bi-arrow-up-right"></i
                       ></a>
@@ -459,7 +696,7 @@
               </div>
 
               <!-- FACIAL 3 -->
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-6 col-md-6">
                 <article class="nfo-card">
                   <div class="nfo-card-image">
                     <img
@@ -471,20 +708,44 @@
                   </div>
 
                   <div class="nfo-card-body">
-                    <span class="nfo-category">O3+ FACIAL</span>
-                    <h3>O3+ Hydration Facial</h3>
-                    <p>
-                      Restores moisture, improves the appearance of skin texture
-                      and enhances your natural glow.
-                    </p>
+                    <!-- <span class="nfo-category">O3+ FACIAL</span> -->
+                    <h3>Richfill Gold Facial</h3>
+                    <div class="nfo-services-list">
+                      <div class="nfo-list-heading">
+                        <span class="nfo-heading-line"></span>
+                        <h4>What's Included</h4>
+                      </div>
 
-                    <div class="nfo-meta">
-                      <span><i class="bi bi-clock"></i> 1 hr 15 min</span>
-                      <span><i class="bi bi-list-check"></i> 4 steps</span>
+                      <ul class="nfo-inclusions">
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Full Body Waxing (Bikini not Included)
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Manicure &amp; Pedicure (Classic)
+                          </span>
+                        </li>
+                      </ul>
                     </div>
 
+                    <!-- <div class="nfo-meta">
+                      <span><i class="bi bi-clock"></i> 1 hr 15 min</span>
+                      <span><i class="bi bi-list-check"></i> 4 steps</span>
+                    </div> -->
+
                     <div class="nfo-card-footer">
-                      <strong>₹1,499</strong>
+                      <strong>₹3,550</strong>
                       <a href="#qb-service-picker"
                         >Book Now <i class="bi bi-arrow-up-right"></i
                       ></a>
@@ -494,7 +755,7 @@
               </div>
 
               <!-- FACIAL 4 -->
-              <div class="col-lg-4 col-md-6">
+              <div class="col-lg-6 col-md-6">
                 <article class="nfo-card">
                   <div class="nfo-card-image">
                     <img
@@ -506,90 +767,44 @@
                   </div>
 
                   <div class="nfo-card-body">
-                    <span class="nfo-category">LOTUS PROFESSIONAL</span>
-                    <h3>HydraVital Facial</h3>
-                    <p>
-                      A deeply hydrating facial designed to lock in moisture and
-                      improve the appearance of flakiness.
-                    </p>
+                    <span class="nfo-category">FESTIVE READY GLOW</span>
+                    <h3>Korean Glow Facial</h3>
+                    <div class="nfo-services-list">
+                      <div class="nfo-list-heading">
+                        <span class="nfo-heading-line"></span>
+                        <h4>What's Included</h4>
+                      </div>
 
-                    <div class="nfo-meta">
+                      <ul class="nfo-inclusions">
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Waxing (Full arm,Full legs,Underarms - Rica)
+                          </span>
+                        </li>
+
+                        <li>
+                          <span class="nfo-list-icon">
+                            <i class="bi bi-check2"></i>
+                          </span>
+
+                          <span class="nfo-list-text">
+                            Threading (Eyebrow, Upperlips, Forehead)
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- <div class="nfo-meta">
                       <span><i class="bi bi-clock"></i> 1 hr 30 min</span>
                       <span><i class="bi bi-list-check"></i> 5 steps</span>
-                    </div>
+                    </div> -->
 
                     <div class="nfo-card-footer">
-                      <strong>₹1,200</strong>
-                      <a href="#qb-service-picker"
-                        >Book Now <i class="bi bi-arrow-up-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- FACIAL 5 -->
-              <div class="col-lg-4 col-md-6">
-                <article class="nfo-card">
-                  <div class="nfo-card-image">
-                    <img
-                      src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=85"
-                      alt="Gold facial beauty treatment"
-                      loading="lazy"
-                    />
-                    <span class="nfo-card-tag">ALL SKIN TYPES</span>
-                  </div>
-
-                  <div class="nfo-card-body">
-                    <span class="nfo-category">RICHFILL FACIAL</span>
-                    <h3>Richfill Gold Facial</h3>
-                    <p>
-                      Helps reduce visible dullness, promote an even-looking
-                      skin tone and restore radiance.
-                    </p>
-
-                    <div class="nfo-meta">
-                      <span><i class="bi bi-clock"></i> 1 hr 15 min</span>
-                      <span><i class="bi bi-list-check"></i> 5 steps</span>
-                    </div>
-
-                    <div class="nfo-card-footer">
-                      <strong>₹1,800</strong>
-                      <a href="#qb-service-picker"
-                        >Book Now <i class="bi bi-arrow-up-right"></i
-                      ></a>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- FACIAL 6 -->
-              <div class="col-lg-4 col-md-6">
-                <article class="nfo-card">
-                  <div class="nfo-card-image">
-                    <img
-                      src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=85"
-                      alt="D-tan facial skincare treatment"
-                      loading="lazy"
-                    />
-                    <span class="nfo-card-tag">ALL SKIN TYPES</span>
-                  </div>
-
-                  <div class="nfo-card-body">
-                    <span class="nfo-category">RICHFILL FACIAL</span>
-                    <h3>Richfill D-Tan Facial</h3>
-                    <p>
-                      Helps reduce the appearance of pigmentation, exfoliate
-                      dead skin and clear impurities.
-                    </p>
-
-                    <div class="nfo-meta">
-                      <span><i class="bi bi-clock"></i> 1 hr 15 min</span>
-                      <span><i class="bi bi-list-check"></i> 5 steps</span>
-                    </div>
-
-                    <div class="nfo-card-footer">
-                      <strong>₹1,250</strong>
+                      <strong>₹2,517</strong>
                       <a href="#qb-service-picker"
                         >Book Now <i class="bi bi-arrow-up-right"></i
                       ></a>
@@ -601,6 +816,8 @@
           </div>
 
           <!-- DIWALI PACKAGES TAB -->
+
+          <!-- DIWALI PACKAGES TAB -->
           <div
             class="nfo-panel"
             id="nfo-packs"
@@ -609,125 +826,160 @@
             hidden
           >
             <div class="row g-4">
-              <!-- PACK 1 -->
+              <!-- PACKAGE 1 -->
               <div class="col-lg-6">
                 <article class="nfo-package">
                   <div class="nfo-package-top">
-                    <span><i class="bi bi-gift"></i> FESTIVE PAMPERING</span>
+                    <span>
+                      <i class="bi bi-gift"></i>
+                      DIWALI PAMPERING PACK
+                    </span>
                     <strong>₹3,957</strong>
                   </div>
-                  <h3>K-Glass Skin Pampering Pack</h3>
-                  <p>
-                    A complete beauty refresh for your festive celebrations.
-                  </p>
+
+                  <h3>K-Glass Skin Facial</h3>
 
                   <ul>
-                    <li><i class="bi bi-check2"></i> K-Glass Skin Facial</li>
                     <li>
-                      <i class="bi bi-check2"></i> Rica Waxing — Full Arms, Full
-                      Legs & Underarms
+                      <i class="bi bi-check2"></i>
+                      K-Glass Skin Facial
                     </li>
+
                     <li>
-                      <i class="bi bi-check2"></i> Classic Manicure & Pedicure
+                      <i class="bi bi-check2"></i>
+                      Waxing (Full Arm, Full Legs, Underarm) Rica
                     </li>
+
                     <li>
-                      <i class="bi bi-check2"></i> Threading — Eyebrows, Upper
-                      Lips & Facial
+                      <i class="bi bi-check2"></i>
+                      Manicure - Pedicure (Classic)
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check2"></i>
+                      Threading (Eyebrow, Upper Lips, Facial)
                     </li>
                   </ul>
 
                   <a href="#qb-service-picker" class="nfo-package-btn">
-                    Book Package <i class="bi bi-arrow-up-right"></i>
+                    Book Package
+                    <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </article>
               </div>
 
-              <!-- PACK 2 -->
+              <!-- PACKAGE 2 -->
               <div class="col-lg-6">
                 <article class="nfo-package">
                   <div class="nfo-package-top">
-                    <span><i class="bi bi-gift"></i> FESTIVE PAMPERING</span>
+                    <span>
+                      <i class="bi bi-gift"></i>
+                      DIWALI PAMPERING PACK
+                    </span>
                     <strong>₹2,799</strong>
                   </div>
-                  <h3>O3+ Gold Infusion Pampering Pack</h3>
-                  <p>
-                    Golden glow with essential hand, foot and facial grooming.
-                  </p>
+
+                  <h3>O3+ Gold Infusion Facial</h3>
 
                   <ul>
                     <li>
-                      <i class="bi bi-check2"></i> O3+ Gold Infusion Facial
+                      <i class="bi bi-check2"></i>
+                      O3+ Gold Infusion Facial
                     </li>
+
                     <li>
-                      <i class="bi bi-check2"></i> Threading — Eyebrows, Upper
-                      Lips & Forehead
+                      <i class="bi bi-check2"></i>
+                      Threading (Eyebrow, Upper Lips, Forehead)
                     </li>
+
                     <li>
-                      <i class="bi bi-check2"></i> Classic Manicure & Pedicure
+                      <i class="bi bi-check2"></i>
+                      Manicure - Pedicure (Classic)
                     </li>
                   </ul>
 
                   <a href="#qb-service-picker" class="nfo-package-btn">
-                    Book Package <i class="bi bi-arrow-up-right"></i>
+                    Book Package
+                    <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </article>
               </div>
 
-              <!-- PACK 3 -->
+              <!-- PACKAGE 3 -->
               <div class="col-lg-6">
                 <article class="nfo-package">
                   <div class="nfo-package-top">
-                    <span><i class="bi bi-gift"></i> FESTIVE PAMPERING</span>
+                    <span>
+                      <i class="bi bi-gift"></i>
+                      DIWALI PAMPERING PACK
+                    </span>
                     <strong>₹3,550</strong>
                   </div>
-                  <h3>Richfill Gold Full Body Pack</h3>
-                  <p>Facial radiance and full-body grooming in one package.</p>
+
+                  <h3>Richfill Gold Facial</h3>
 
                   <ul>
-                    <li><i class="bi bi-check2"></i> Richfill Gold Facial</li>
-                    <li><i class="bi bi-check2"></i> Full Body Waxing</li>
                     <li>
-                      <i class="bi bi-info-circle"></i> Bikini Waxing Not
-                      Included
+                      <i class="bi bi-check2"></i>
+                      Richfill Gold Facial
                     </li>
+
                     <li>
-                      <i class="bi bi-check2"></i> Classic Manicure & Pedicure
+                      <i class="bi bi-check2"></i>
+                      Full Body Waxing
+                    </li>
+
+                    <li>
+                      <i class="bi bi-info-circle"></i>
+                      Bikini Not Included
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check2"></i>
+                      Manicure - Pedicure (Classic)
                     </li>
                   </ul>
 
                   <a href="#qb-service-picker" class="nfo-package-btn">
-                    Book Package <i class="bi bi-arrow-up-right"></i>
+                    Book Package
+                    <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </article>
               </div>
 
-              <!-- PACK 4 -->
+              <!-- PACKAGE 4 -->
               <div class="col-lg-6">
                 <article class="nfo-package">
                   <div class="nfo-package-top">
-                    <span><i class="bi bi-gift"></i> FESTIVE PAMPERING</span>
+                    <span>
+                      <i class="bi bi-gift"></i>
+                      DIWALI PAMPERING PACK
+                    </span>
                     <strong>₹2,517</strong>
                   </div>
+
                   <h3>Festive Ready Glow</h3>
-                  <p>
-                    A refreshing facial and grooming combination for
-                    celebrations.
-                  </p>
 
                   <ul>
-                    <li><i class="bi bi-check2"></i> Korean Glow Facial</li>
                     <li>
-                      <i class="bi bi-check2"></i> Rica Waxing — Full Arms, Full
-                      Legs & Underarms
+                      <i class="bi bi-check2"></i>
+                      Korean Glow Facial
                     </li>
+
                     <li>
-                      <i class="bi bi-check2"></i> Threading — Upper Lips,
-                      Eyebrows & Forehead
+                      <i class="bi bi-check2"></i>
+                      Wax (Full Hand, Full Legs, Underarm) Rica
+                    </li>
+
+                    <li>
+                      <i class="bi bi-check2"></i>
+                      Threading (Upper Lips, Eyebrow, Forehead)
                     </li>
                   </ul>
 
                   <a href="#qb-service-picker" class="nfo-package-btn">
-                    Book Package <i class="bi bi-arrow-up-right"></i>
+                    Book Package
+                    <i class="bi bi-arrow-up-right"></i>
                   </a>
                 </article>
               </div>
@@ -1572,5 +1824,303 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="form.js"></script>
+    <script>
+      /* ============================================
+   NAAREE BEAUTY COLLECTION
+   HAIR STUDIO + SAREE DRAPING
+============================================ */
+
+      (function () {
+        "use strict";
+
+        function initNaareeCollection() {
+          const section = document.querySelector(".naaree-collection");
+
+          if (!section || section.dataset.ncInitialized === "true") {
+            return;
+          }
+
+          section.dataset.ncInitialized = "true";
+
+          /* ============================================
+       1. HAIR STUDIO SERVICE DATA
+    ============================================ */
+
+          const hairServices = {
+            hairstyle: [
+              {
+                name: "Basic Hairstyle",
+                price: 499,
+                icon: "bi-scissors",
+                details: ["Bun", "Vegie", "Donut"],
+              },
+
+              {
+                name: "Advance Hairstyle",
+                price: 799,
+                icon: "bi-scissors",
+                details: [],
+              },
+            ],
+
+            curl: [
+              {
+                name: "In Curl / Out Curl Blow-Dry",
+                price: 350,
+                icon: "bi-wind",
+                details: [],
+              },
+
+              {
+                name: "Straight & Smooth Blow-Dry",
+                price: 350,
+                icon: "bi-wind",
+                details: [],
+              },
+              {
+                name: "Hair Straightening (Ironing)",
+                price: 550,
+                icon: "bi-scissors",
+                details: [],
+              },
+
+              {
+                name: "Curls Wave",
+                price: 500,
+                icon: "bi-water",
+                details: [],
+              },
+
+              {
+                name: "Crimping",
+                price: 400,
+                icon: "bi-scissors",
+                details: [],
+              },
+            ],
+          };
+
+          /* ============================================
+       2. HELPER FUNCTIONS
+    ============================================ */
+
+          function escapeHTML(value) {
+            return String(value).replace(/[&<>"']/g, function (char) {
+              const characters = {
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+              };
+
+              return characters[char];
+            });
+          }
+
+          function formatPrice(price) {
+            return "₹" + Number(price).toLocaleString("en-IN");
+          }
+
+          /* ============================================
+       3. CREATE SERVICE CARD
+    ============================================ */
+
+          function createCard(service) {
+            const details = Array.isArray(service.details)
+              ? service.details
+              : [];
+
+            const detailsHTML = details.length
+              ? `
+          <ul class="nc-service-includes">
+            ${details
+              .map(function (detail) {
+                return `
+                <li>
+                  <i class="bi bi-check2"></i>
+                  <span>${escapeHTML(detail)}</span>
+                </li>
+              `;
+              })
+              .join("")}
+          </ul>
+        `
+              : "";
+
+            return `
+        <div class="col-lg-4 col-md-6">
+
+          <article class="nc-service-card">
+
+            <div class="nc-service-top">
+
+              <span class="nc-service-icon">
+                <i class="bi ${escapeHTML(service.icon)}"></i>
+              </span>
+
+              <strong class="nc-service-price">
+                ${formatPrice(service.price)}
+              </strong>
+
+            </div>
+
+            <h4>${escapeHTML(service.name)}</h4>
+
+            ${detailsHTML}
+
+            <div class="nc-card-footer">
+
+              <span>Hair Studio</span>
+
+              <a href="#booking-services"
+                 class="nc-book-btn"
+                 aria-label="Book ${escapeHTML(service.name)}">
+
+                Book Now
+                <i class="bi bi-arrow-up-right"></i>
+
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+      `;
+          }
+
+          /* ============================================
+       4. RENDER HAIR SERVICES
+    ============================================ */
+
+          function renderHairServices(type) {
+            const container = section.querySelector("#nc-hair-list");
+
+            if (!container) {
+              console.warn("Hair Studio container not found.");
+              return;
+            }
+
+            const services = hairServices[type] || [];
+
+            container.innerHTML = services
+              .map(function (service) {
+                return createCard(service);
+              })
+              .join("");
+          }
+
+          /* ============================================
+       5. HAIR STUDIO SUBCATEGORY BUTTONS
+    ============================================ */
+
+          const hairButtons = Array.from(
+            section.querySelectorAll(".nc-hair-type"),
+          );
+
+          function activateHairType(type) {
+            if (!hairServices[type]) return;
+
+            hairButtons.forEach(function (button) {
+              const isActive = button.dataset.hairType === type;
+
+              button.classList.toggle("active", isActive);
+
+              button.setAttribute("aria-pressed", String(isActive));
+            });
+
+            renderHairServices(type);
+          }
+
+          hairButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+              activateHairType(button.dataset.hairType);
+            });
+          });
+
+          /* ============================================
+       6. MAIN CATEGORY TABS
+       HAIR STUDIO / SAREE DRAPING
+    ============================================ */
+
+          const mainTabs = Array.from(
+            section.querySelectorAll(".nc-tab"),
+          ).filter(function (tab) {
+            return ["hair", "saree"].includes(tab.dataset.ncTab);
+          });
+
+          const mainPanels = Array.from(section.querySelectorAll(".nc-panel"));
+
+          function activateMainTab(target) {
+            mainTabs.forEach(function (tab) {
+              const isActive = tab.dataset.ncTab === target;
+
+              tab.classList.toggle("active", isActive);
+
+              tab.setAttribute("aria-selected", String(isActive));
+
+              tab.tabIndex = isActive ? 0 : -1;
+            });
+
+            mainPanels.forEach(function (panel) {
+              const isActive = panel.id === "nc-" + target;
+
+              panel.classList.toggle("active", isActive);
+
+              panel.hidden = !isActive;
+            });
+          }
+
+          mainTabs.forEach(function (tab, index) {
+            tab.addEventListener("click", function () {
+              activateMainTab(tab.dataset.ncTab);
+            });
+
+            tab.addEventListener("keydown", function (event) {
+              let nextIndex;
+
+              if (event.key === "ArrowRight") {
+                nextIndex = (index + 1) % mainTabs.length;
+              } else if (event.key === "ArrowLeft") {
+                nextIndex = (index - 1 + mainTabs.length) % mainTabs.length;
+              } else if (event.key === "Home") {
+                nextIndex = 0;
+              } else if (event.key === "End") {
+                nextIndex = mainTabs.length - 1;
+              } else {
+                return;
+              }
+
+              event.preventDefault();
+
+              const nextTab = mainTabs[nextIndex];
+
+              activateMainTab(nextTab.dataset.ncTab);
+
+              nextTab.focus();
+            });
+          });
+
+          /* ============================================
+       7. DEFAULT ACTIVE CATEGORY
+    ============================================ */
+
+          activateHairType("hairstyle");
+
+          activateMainTab("hair");
+        }
+
+        /* ============================================
+     8. SAFE INITIALIZATION
+  ============================================ */
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initNaareeCollection);
+        } else {
+          initNaareeCollection();
+        }
+      })();
+    </script>
   </body>
 </html>

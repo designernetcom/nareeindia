@@ -259,7 +259,7 @@
   border-radius: 9px;
   background: #faf8f5;
   color: #514641;
-  font: 600 11px/1.4 var(--nb-sans);
+  font-size: 13px;
   white-space: nowrap;
   cursor: pointer;
   box-shadow: none;
