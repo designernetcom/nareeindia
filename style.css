@@ -4616,8 +4616,6 @@ html {
   }
 }
 
-
-
 /* ===================================
    NAAREE - PREMIUM SERVICES LIST
 =================================== */
@@ -4641,11 +4639,7 @@ html {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    #004aad 0%,
-    #c20202 100%
-  );
+  background: linear-gradient(90deg, #004aad 0%, #c20202 100%);
 }
 
 /* HEADING */
@@ -4685,7 +4679,7 @@ html {
   gap: 12px;
   padding: 13px 0;
   border-bottom: 1px solid #eee8e2;
-  transition: padding-left .25s ease;
+  transition: padding-left 0.25s ease;
 }
 
 .nfo-services-list .nfo-inclusions li:first-child {
@@ -4710,7 +4704,9 @@ html {
   color: #004aad;
   font-size: 14px;
   margin-top: 1px;
-  transition: background .25s ease, color .25s ease;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
 }
 
 /* TEXT */
@@ -4752,5 +4748,609 @@ html {
   .nfo-services-list .nfo-inclusions li,
   .nfo-list-icon {
     transition: none;
+  }
+}
+
+/* =========================================
+   NAAREE FESTIVE OFFERS - MODERN REDESIGN
+========================================= */
+
+.naaree-festive-offers {
+  --nfo-blue: #004aad;
+  --nfo-red: #c20202;
+  --nfo-ink: #28231f;
+  --nfo-muted: #71665f;
+  --nfo-line: #e8ded5;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 90px 0;
+  background: linear-gradient(145deg, #fffdf9 0%, #f8f4ef 65%, #f4f6fb 100%);
+  font-family: var(--sans, "DM Sans", sans-serif);
+  color: var(--nfo-ink);
+}
+
+.naaree-festive-offers * {
+  box-sizing: border-box;
+}
+
+.naaree-festive-offers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  opacity: 0.34;
+  pointer-events: none;
+  z-index: -1;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 25px,
+    rgba(0, 74, 173, 0.045) 26px 27px
+  );
+}
+
+/* SECTION HEADING */
+
+.naaree-festive-offers .nfo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 35px;
+}
+
+.naaree-festive-offers .nfo-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 17px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.19em;
+  color: var(--nfo-blue);
+}
+
+.naaree-festive-offers .nfo-eyebrow i {
+  font-size: 17px;
+  color: var(--nfo-red);
+}
+
+.naaree-festive-offers .nfo-heading h2 {
+  max-width: 770px;
+  margin: 0 0 17px;
+  font-family: var(--serif, "Playfair Display", Georgia, serif);
+  font-size: clamp(34px, 4.6vw, 62px);
+  font-weight: 500;
+  line-height: 1.13;
+  letter-spacing: -0.035em;
+}
+
+.naaree-festive-offers .nfo-heading h2 em {
+  font-weight: 500;
+  color: var(--nfo-blue);
+}
+
+.naaree-festive-offers .nfo-heading p {
+  max-width: 590px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--nfo-muted);
+}
+
+/* HEADING DECORATION */
+
+.naaree-festive-offers .nfo-heading-decor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  flex-shrink: 0;
+  width: 180px;
+  min-height: 180px;
+  border: 1px solid rgba(0, 74, 173, 0.16);
+  border-radius: 50% 50% 12px 50%;
+  background: rgba(255, 255, 255, 0.65);
+  transform: rotate(-7deg);
+}
+
+.naaree-festive-offers .nfo-heading-decor i {
+  font-size: 48px;
+  color: var(--nfo-blue);
+}
+
+.naaree-festive-offers .nfo-heading-decor span {
+  max-width: 120px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.6;
+  color: var(--nfo-muted);
+}
+
+/* =========================================
+   TABS
+========================================= */
+
+.naaree-festive-offers .nfo-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px;
+  margin-bottom: 30px;
+  border: 1px solid var(--nfo-line);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(28, 32, 46, 0.035);
+}
+
+.naaree-festive-offers .nfo-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 24px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--nfo-muted);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.25s,
+    color 0.25s,
+    box-shadow 0.25s;
+}
+
+.naaree-festive-offers .nfo-tab i {
+  font-size: 17px;
+}
+
+.naaree-festive-offers .nfo-tab:hover {
+  background: #eef3fc;
+  color: var(--nfo-blue);
+}
+
+.naaree-festive-offers .nfo-tab.active,
+.naaree-festive-offers .nfo-tab[aria-selected="true"] {
+  background: var(--nfo-blue);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 74, 173, 0.18);
+}
+
+.naaree-festive-offers .nfo-tab:focus-visible,
+.naaree-festive-offers a:focus-visible {
+  outline: 3px solid var(--nfo-red);
+  outline-offset: 3px;
+}
+
+/* PANELS */
+
+.naaree-festive-offers .nfo-panel[hidden] {
+  display: none !important;
+}
+
+.naaree-festive-offers .nfo-panel {
+  animation: nfoFade 0.35s ease both;
+}
+
+@keyframes nfoFade {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.naaree-festive-offers .nfo-panel .row > [class*="col-"] {
+  display: flex;
+}
+
+/* =========================================
+   FACIAL CARDS
+========================================= */
+
+.naaree-festive-offers .nfo-card,
+.naaree-festive-offers .nfo-package {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #eae5df;
+  border-radius: 19px;
+  background: #fff;
+  box-shadow: 0 10px 36px rgba(35, 31, 28, 0.045);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.naaree-festive-offers .nfo-card:hover,
+.naaree-festive-offers .nfo-package:hover {
+  transform: translateY(-5px);
+  border-color: #c8d8f2;
+  box-shadow: 0 22px 45px rgba(35, 31, 28, 0.095);
+}
+
+.naaree-festive-offers .nfo-card {
+  display: grid;
+  grid-template-columns: minmax(150px, 37%) minmax(0, 1fr);
+  min-height: 335px;
+}
+
+/* FACIAL IMAGE */
+
+.naaree-festive-offers .nfo-card-image {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  background: #f0e9e1;
+}
+
+.naaree-festive-offers .nfo-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.naaree-festive-offers .nfo-card:hover .nfo-card-image img {
+  transform: scale(1.055);
+}
+
+.naaree-festive-offers .nfo-card-tag {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  max-width: calc(100% - 28px);
+  padding: 8px 10px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--nfo-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  display: none;
+}
+
+/* FACIAL CONTENT */
+
+.naaree-festive-offers .nfo-card-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 24px 24px 22px;
+}
+
+.naaree-festive-offers .nfo-category {
+  margin-bottom: 8px;
+  color: var(--nfo-red);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.naaree-festive-offers .nfo-card h3,
+.naaree-festive-offers .nfo-package h3 {
+  margin: 0 0 15px;
+  color: var(--nfo-ink);
+  font-family: var(--serif, "Playfair Display", Georgia, serif);
+  font-size: clamp(20px, 2vw, 27px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+/* =========================================
+   WHAT'S INCLUDED LIST
+========================================= */
+
+.naaree-festive-offers .nfo-services-list {
+  padding: 0;
+  margin: 0 0 22px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  overflow: visible;
+}
+
+.naaree-festive-offers .nfo-services-list::before {
+  display: none;
+}
+
+.naaree-festive-offers .nfo-list-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 8px;
+}
+
+.naaree-festive-offers .nfo-heading-line {
+  width: 17px;
+  height: 2px;
+  background: var(--nfo-red);
+}
+
+.naaree-festive-offers .nfo-list-heading h4 {
+  margin: 0;
+  color: var(--nfo-blue);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.naaree-festive-offers .nfo-inclusions,
+.naaree-festive-offers .nfo-package ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.naaree-festive-offers .nfo-inclusions li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 9px 0;
+  border-bottom: 1px solid #f0ede9;
+  line-height: 1.55;
+}
+
+.naaree-festive-offers .nfo-inclusions li:last-child {
+  border-bottom: 0;
+}
+
+.naaree-festive-offers .nfo-list-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 21px;
+  width: 21px;
+  height: 21px;
+  border-radius: 6px;
+  background: #eaf1fc;
+  color: var(--nfo-blue);
+  font-size: 12px;
+}
+
+.naaree-festive-offers .nfo-list-text {
+  color: var(--nfo-muted);
+  font-size: 12.5px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   PRICE AND BOOKING
+========================================= */
+
+.naaree-festive-offers .nfo-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 17px;
+  border-top: 1px solid var(--nfo-line);
+}
+
+.naaree-festive-offers .nfo-card-footer strong {
+  color: var(--nfo-ink);
+  font-size: 23px;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.naaree-festive-offers .nfo-card-footer a,
+.naaree-festive-offers .nfo-package-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border-radius: 9px;
+  background: var(--nfo-blue);
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+
+.naaree-festive-offers .nfo-card-footer a:hover,
+.naaree-festive-offers .nfo-package-btn:hover {
+  background: var(--nfo-red);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   DIWALI PACKAGE CARDS
+========================================= */
+
+.naaree-festive-offers .nfo-package {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 28px 30px;
+}
+
+.naaree-festive-offers .nfo-package::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background: var(--nfo-blue);
+}
+
+.naaree-festive-offers .nfo-package-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.naaree-festive-offers .nfo-package-top span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--nfo-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.naaree-festive-offers .nfo-package-top span i {
+  color: var(--nfo-red);
+  font-size: 17px;
+}
+
+.naaree-festive-offers .nfo-package-top strong {
+  color: var(--nfo-ink);
+  font-size: 23px;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.naaree-festive-offers .nfo-package h3 {
+  margin-bottom: 20px;
+}
+
+.naaree-festive-offers .nfo-package ul {
+  margin-bottom: 24px;
+}
+
+.naaree-festive-offers .nfo-package ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid #f1ede9;
+  color: var(--nfo-muted);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.naaree-festive-offers .nfo-package ul li:last-child {
+  border-bottom: 0;
+}
+
+.naaree-festive-offers .nfo-package ul li i {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #eaf1fc;
+  color: var(--nfo-blue);
+  font-size: 13px;
+}
+
+.naaree-festive-offers .nfo-package ul li i.bi-info-circle {
+  background: #fff1ed;
+  color: var(--nfo-red);
+}
+
+.naaree-festive-offers .nfo-package-btn {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 13px 20px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1199px) {
+  .naaree-festive-offers .nfo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .naaree-festive-offers .nfo-card-image {
+    height: 210px;
+    min-height: 210px;
+  }
+
+  .naaree-festive-offers .nfo-card-body {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .naaree-festive-offers {
+    padding: 65px 0;
+  }
+
+  .naaree-festive-offers .nfo-heading-decor {
+    display: none;
+  }
+
+  .naaree-festive-offers .nfo-heading {
+    margin-bottom: 24px;
+  }
+
+  .naaree-festive-offers .nfo-tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  .naaree-festive-offers .nfo-tab {
+    flex: 1;
+    padding: 13px 10px;
+    font-size: 12px;
+  }
+
+  .naaree-festive-offers .nfo-package {
+    padding: 23px;
+  }
+}
+
+@media (max-width: 450px) {
+  .naaree-festive-offers .nfo-card-footer strong {
+    font-size: 20px;
+  }
+
+  .naaree-festive-offers .nfo-package-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .naaree-festive-offers .nfo-tab {
+    gap: 6px;
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .naaree-festive-offers .nfo-panel {
+    animation: none;
+  }
+
+  .naaree-festive-offers .nfo-card,
+  .naaree-festive-offers .nfo-package,
+  .naaree-festive-offers img,
+  .naaree-festive-offers a {
+    transition: none !important;
   }
 }

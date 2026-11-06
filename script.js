@@ -52,280 +52,280 @@ const nrImages = {
     "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
 };
 
-const nrServiceData = {
-  threading: {
-    label: "01 / FACE & GROOMING",
-    title: "Threading & Facial Waxing",
-    desc: "Precise finishing touches for a polished look.",
-    tag: "FACE CARE",
-    image: nrImages.threading,
-    items: [
-      {
-        name: "Eyebrows",
-        price: 59,
-        variants: ["Thread ₹59", "Gel wax ₹79", "Bead wax ₹99"],
-      },
-      {
-        name: "Upper Lips",
-        price: 59,
-        variants: ["Thread ₹59", "Gel wax ₹79", "Bead wax ₹99"],
-      },
-      {
-        name: "Forehead",
-        price: 59,
-        variants: ["Thread ₹59", "Gel wax ₹79", "Bead wax ₹99"],
-      },
-      {
-        name: "Sidelocks + Jawline",
-        price: 59,
-        variants: ["Thread ₹59", "Gel wax ₹79", "Bead wax ₹99"],
-      },
-      {
-        name: "Chin + Lower Lips",
-        price: 59,
-        variants: ["Thread ₹59", "Gel wax ₹79", "Bead wax ₹99"],
-      },
-      {
-        name: "Neck (Front Only)",
-        price: 59,
-        variants: ["Thread ₹59", "Gel wax ₹159", "Bead wax ₹199"],
-      },
-      {
-        name: "Full Face (Excl. Neck)",
-        price: 250,
-        variants: ["Thread ₹250", "Gel wax ₹349", "Bead wax ₹450"],
-      },
-    ],
-  },
+// const nrServiceData = {
+//   threading: {
+//     label: "01 / FACE & GROOMING",
+//     title: "Threading & Facial Waxing",
+//     desc: "Precise finishing touches for a polished look.",
+//     tag: "FACE CARE",
+//     image: nrImages.threading,
+//     items: [
+//       {
+//         name: "Eyebrows",
+//         price: 59,
+//         variants: ["Thread ₹59", "Peel Off wax ₹99"],
+//       },
+//       {
+//         name: "Upper Lips",
+//         price: 59,
+//         variants: ["Thread ₹59", "Peel Off wax ₹99"],
+//       },
+//       {
+//         name: "Forehead",
+//         price: 59,
+//         variants: ["Thread ₹59", "Peel Off wax ₹99"],
+//       },
+//       {
+//         name: "Sidelocks + Jawline",
+//         price: 59,
+//         variants: ["Thread ₹59", "Peel Off wax ₹99"],
+//       },
+//       {
+//         name: "Chin + Lower Lips",
+//         price: 59,
+//         variants: ["Thread ₹59", "Peel Off wax ₹99"],
+//       },
+//       {
+//         name: "Neck (Front Only)",
+//         price: 59,
+//         variants: ["Thread ₹59", "Peel Off Wax ₹199"],
+//       },
+//       {
+//         name: "Full Face (Excl. Neck)",
+//         price: 250,
+//         variants: ["Thread ₹250", "Peel Off Wax ₹450"],
+//       },
+//     ],
+//   },
 
-  waxing: {
-    label: "02 / BODY CARE",
-    title: "Body Waxing",
-    desc: "Smooth skin with a choice of waxing techniques.",
-    tag: "BODY CARE",
-    image: nrImages.waxing,
-    items: [
-      {
-        name: "Full Arms + Underarms",
-        price: 399,
-        variants: ["Honey ₹399", "Gel wax ₹449", "Rica ₹549"],
-      },
-      {
-        name: "Full Legs",
-        price: 399,
-        variants: ["Honey ₹399", "Gel wax ₹449", "Rica ₹549"],
-      },
-      {
-        name: "Half Legs",
-        price: 299,
-        variants: ["Honey ₹299", "Gel wax ₹349", "Rica ₹449"],
-      },
-      {
-        name: "Full Body",
-        price: 1300,
-        variants: ["Honey ₹1300", "Gel wax ₹1500", "Rica ₹1800"],
-      },
-      {
-        name: "Full Back",
-        price: 399,
-        variants: ["Honey ₹399", "Gel wax ₹449", "Rica ₹499"],
-      },
-      {
-        name: "Stomach",
-        price: 320,
-        variants: ["Honey ₹320", "Gel wax ₹350", "Rica ₹399"],
-      },
-      {
-        name: "Underarms",
-        price: 49,
-        variants: ["Honey ₹49", "Gel wax ₹99", "Rica ₹169"],
-      },
-      {
-        name: "Butt Waxing",
-        price: 399,
-        variants: ["Honey ₹399", "Gel wax ₹429", "Rica ₹449"],
-      },
-      {
-        name: "Bikini (Peel-off)",
-        price: 699,
-        variants: ["Honey ₹699", "Rica ₹1299"],
-      },
-      {
-        name: "Bikini Line (Peel-off)",
-        price: 299,
-        variants: ["Honey ₹299", "Rica ₹349"],
-      },
-      {
-        name: "Full Arms",
-        price: 349,
-        variants: ["Honey ₹349", "Gel wax ₹399", "Rica ₹449"],
-      },
-      {
-        name: "Half Arms",
-        price: 299,
-        variants: ["Honey ₹299", "Gel wax ₹329", "Rica ₹349"],
-      },
-      {
-        name: "Half Back",
-        price: 199,
-        variants: ["Honey ₹199", "Gel wax ₹299", "Rica ₹349"],
-      },
-    ],
-  },
+//   waxing: {
+//     label: "02 / BODY CARE",
+//     title: "Body Waxing",
+//     desc: "Smooth skin with a choice of waxing techniques.",
+//     tag: "BODY CARE",
+//     image: nrImages.waxing,
+//     items: [
+//       {
+//         name: "Full Arms + Underarms",
+//         price: 399,
+//         variants: ["Honey ₹399", "Gel wax ₹449", "Rica ₹549"],
+//       },
+//       {
+//         name: "Full Legs",
+//         price: 399,
+//         variants: ["Honey ₹399", "Gel wax ₹449", "Rica ₹549"],
+//       },
+//       {
+//         name: "Half Legs",
+//         price: 299,
+//         variants: ["Honey ₹299", "Gel wax ₹349", "Rica ₹449"],
+//       },
+//       {
+//         name: "Full Body",
+//         price: 1300,
+//         variants: ["Honey ₹1300", "Gel wax ₹1500", "Rica ₹1800"],
+//       },
+//       {
+//         name: "Full Back",
+//         price: 399,
+//         variants: ["Honey ₹399", "Gel wax ₹449", "Rica ₹499"],
+//       },
+//       {
+//         name: "Stomach",
+//         price: 320,
+//         variants: ["Honey ₹320", "Gel wax ₹350", "Rica ₹399"],
+//       },
+//       {
+//         name: "Underarms",
+//         price: 49,
+//         variants: ["Honey ₹49", "Gel wax ₹99", "Rica ₹169"],
+//       },
+//       {
+//         name: "Butt Waxing",
+//         price: 399,
+//         variants: ["Honey ₹399", "Gel wax ₹429", "Rica ₹449"],
+//       },
+//       {
+//         name: "Bikini (Peel-off)",
+//         price: 699,
+//         variants: ["Honey ₹699", "Rica ₹1299"],
+//       },
+//       {
+//         name: "Bikini Line (Peel-off)",
+//         price: 299,
+//         variants: ["Honey ₹299", "Rica ₹349"],
+//       },
+//       {
+//         name: "Full Arms",
+//         price: 349,
+//         variants: ["Honey ₹349", "Gel wax ₹399", "Rica ₹449"],
+//       },
+//       {
+//         name: "Half Arms",
+//         price: 299,
+//         variants: ["Honey ₹299", "Gel wax ₹329", "Rica ₹349"],
+//       },
+//       {
+//         name: "Half Back",
+//         price: 199,
+//         variants: ["Honey ₹199", "Gel wax ₹299", "Rica ₹349"],
+//       },
+//     ],
+//   },
 
-  cleanup: {
-    label: "03 / SKIN ESSENTIALS",
-    title: "Cleanup",
-    desc: "A refreshing little reset for your skin.",
-    tag: "SKIN CARE",
-    image: nrImages.cleanup,
-    items: [
-      { name: "De-Tan Cleanup", price: 929 },
-      { name: "Fruit Cleanup", price: 729 },
-    ],
-  },
+//   cleanup: {
+//     label: "03 / SKIN ESSENTIALS",
+//     title: "Cleanup",
+//     desc: "A refreshing little reset for your skin.",
+//     tag: "SKIN CARE",
+//     image: nrImages.cleanup,
+//     items: [
+//       { name: "De-Tan Cleanup", price: 929 },
+//       { name: "Fruit Cleanup", price: 729 },
+//     ],
+//   },
 
-  facial: {
-    label: "04 / SKIN RITUALS",
-    title: "Facial",
-    desc: "Thoughtful skincare for your glow-up moments.",
-    tag: "FACIAL",
-    image: nrImages.facial,
-    items: [
-      {
-        name: "Casmara Hydration Facial",
-        price: 3000,
-        duration: "1 hr 30 min",
-        steps: "5 steps",
-      },
-      {
-        name: "O3+ Shine and Glow Facial",
-        price: 1749,
-        duration: "1 hr 20 min",
-        steps: "7 steps",
-      },
-      {
-        name: "Casmara Anti-Aging Facial",
-        price: 3999,
-        duration: "1 hr 30 min",
-        steps: "5 steps",
-      },
-      {
-        name: "Wine Glow Facial",
-        price: 1249,
-        duration: "1 hr 15 min",
-        steps: "9 steps",
-      },
-    ],
-  },
+//   facial: {
+//     label: "04 / SKIN RITUALS",
+//     title: "Facial",
+//     desc: "Thoughtful skincare for your glow-up moments.",
+//     tag: "FACIAL",
+//     image: nrImages.facial,
+//     items: [
+//       {
+//         name: "Casmara Hydration Facial",
+//         price: 3000,
+//         duration: "1 hr 30 min",
+//         steps: "5 steps",
+//       },
+//       {
+//         name: "O3+ Shine and Glow Facial",
+//         price: 1749,
+//         duration: "1 hr 20 min",
+//         steps: "7 steps",
+//       },
+//       {
+//         name: "Casmara Anti-Aging Facial",
+//         price: 3999,
+//         duration: "1 hr 30 min",
+//         steps: "5 steps",
+//       },
+//       {
+//         name: "Wine Glow Facial",
+//         price: 1249,
+//         duration: "1 hr 15 min",
+//         steps: "9 steps",
+//       },
+//     ],
+//   },
 
-  korean: {
-    label: "05 / K-BEAUTY",
-    title: "Korean Facial",
-    desc: "Discover dewy, luminous Korean-inspired skincare.",
-    tag: "K-BEAUTY",
-    image: nrImages.korean,
-    items: [
-      {
-        name: "FYC Korean Glass Skin Facial",
-        price: 2000,
-        duration: "1 hr 20 min",
-        steps: "9 steps",
-      },
-      {
-        name: "Swiss Beauty Korean Glow Facial",
-        price: 1399,
-        duration: "1 hr 20 min",
-        steps: "8 steps",
-      },
-      {
-        name: "Korean Hydration Facial",
-        price: 1749,
-        duration: "1 hr 20 min",
-        steps: "9 steps",
-      },
-      {
-        name: "Korean Anti Age Rewind Facial",
-        price: 1899,
-        duration: "1 hr 20 min",
-        steps: "9 steps",
-      },
-      {
-        name: "K-Facial for Pigmentation and Uneven Skin Tone",
-        price: 1899,
-        duration: "1 hr 20 min",
-        steps: "10 steps",
-      },
-    ],
-  },
+//   korean: {
+//     label: "05 / K-BEAUTY",
+//     title: "Korean Facial",
+//     desc: "Discover dewy, luminous Korean-inspired skincare.",
+//     tag: "K-BEAUTY",
+//     image: nrImages.korean,
+//     items: [
+//       {
+//         name: "FYC Korean Glass Skin Facial",
+//         price: 2000,
+//         duration: "1 hr 20 min",
+//         steps: "9 steps",
+//       },
+//       {
+//         name: "Swiss Beauty Korean Glow Facial",
+//         price: 1399,
+//         duration: "1 hr 20 min",
+//         steps: "8 steps",
+//       },
+//       {
+//         name: "Korean Hydration Facial",
+//         price: 1749,
+//         duration: "1 hr 20 min",
+//         steps: "9 steps",
+//       },
+//       {
+//         name: "Korean Anti Age Rewind Facial",
+//         price: 1899,
+//         duration: "1 hr 20 min",
+//         steps: "9 steps",
+//       },
+//       {
+//         name: "K-Facial for Pigmentation and Uneven Skin Tone",
+//         price: 1899,
+//         duration: "1 hr 20 min",
+//         steps: "10 steps",
+//       },
+//     ],
+//   },
 
-  ayurvedic: {
-    label: "06 / NATURAL BEAUTY",
-    title: "Ayurvedic Facial",
-    desc: "Traditional beauty-inspired rituals for radiant skin.",
-    tag: "AYURVEDIC",
-    image: nrImages.ayurvedic,
-    items: [
-      {
-        name: "Kumkumadi Hydration Facial",
-        price: 1299,
-        duration: "1 hr 20 min",
-        steps: "6 steps",
-      },
-      {
-        name: "O3+ Ayurvedic Facial",
-        price: 1790,
-        duration: "1 hr 15 min",
-        steps: "7 steps",
-      },
-    ],
-  },
+//   ayurvedic: {
+//     label: "06 / NATURAL BEAUTY",
+//     title: "Ayurvedic Facial",
+//     desc: "Traditional beauty-inspired rituals for radiant skin.",
+//     tag: "AYURVEDIC",
+//     image: nrImages.ayurvedic,
+//     items: [
+//       {
+//         name: "Kumkumadi Hydration Facial",
+//         price: 1299,
+//         duration: "1 hr 20 min",
+//         steps: "6 steps",
+//       },
+//       {
+//         name: "O3+ Ayurvedic Facial",
+//         price: 1790,
+//         duration: "1 hr 15 min",
+//         steps: "7 steps",
+//       },
+//     ],
+//   },
 
-  manicure: {
-    label: "07 / HANDS & FEET",
-    title: "Manicure & Pedicure",
-    desc: "Beautiful care from fingertips to toes.",
-    tag: "NAIL CARE",
-    image: nrImages.manicure,
-    items: [
-      { name: "Classic Manicure & Pedicure", price: 780 },
-      { name: "Premium Manicure & Pedicure", price: 1299 },
-      { name: "Classic Pedicure", price: 599 },
-      { name: "Premium Pedicure", price: 999 },
-      { name: "Classic Manicure", price: 499 },
-      { name: "Premium Manicure", price: 899 },
-    ],
-  },
+//   manicure: {
+//     label: "07 / HANDS & FEET",
+//     title: "Manicure & Pedicure",
+//     desc: "Beautiful care from fingertips to toes.",
+//     tag: "NAIL CARE",
+//     image: nrImages.manicure,
+//     items: [
+//       { name: "Classic Manicure & Pedicure", price: 780 },
+//       { name: "Premium Manicure & Pedicure", price: 1299 },
+//       { name: "Classic Pedicure", price: 599 },
+//       { name: "Premium Pedicure", price: 999 },
+//       { name: "Classic Manicure", price: 499 },
+//       { name: "Premium Manicure", price: 899 },
+//     ],
+//   },
 
-  massage: {
-    label: "08 / RELAXATION",
-    title: "Head Massage",
-    desc: "A quiet moment of relaxation, just for you.",
-    tag: "RELAX",
-    image: nrImages.massage,
-    items: [
-      {
-        name: "Relaxing Head Massage for Scalp Health",
-        price: 299,
-        duration: "30 min",
-      },
-      {
-        name: "Head, Neck & Shoulder Massage",
-        price: 499,
-        duration: "30 min",
-      },
-    ],
-  },
+//   massage: {
+//     label: "08 / RELAXATION",
+//     title: "Head Massage",
+//     desc: "A quiet moment of relaxation, just for you.",
+//     tag: "RELAX",
+//     image: nrImages.massage,
+//     items: [
+//       {
+//         name: "Relaxing Head Massage for Scalp Health",
+//         price: 299,
+//         duration: "30 min",
+//       },
+//       {
+//         name: "Head, Neck & Shoulder Massage",
+//         price: 499,
+//         duration: "30 min",
+//       },
+//     ],
+//   },
 
-  draping: {
-    label: "09 / OCCASION READY",
-    title: "Draping",
-    desc: "The finishing touch for your special occasion.",
-    tag: "STYLING",
-    image: nrImages.draping,
-    items: [{ name: "Saree Draping", price: 399 }],
-  },
-};
+//   draping: {
+//     label: "09 / OCCASION READY",
+//     title: "Draping",
+//     desc: "The finishing touch for your special occasion.",
+//     tag: "STYLING",
+//     image: nrImages.draping,
+//     items: [{ name: "Saree Draping", price: 399 }],
+//   },
+// };
 
 /* Escape dynamic text before HTML insertion */
 function nrEscape(value) {
@@ -785,3 +785,93 @@ document.addEventListener("DOMContentLoaded", function () {
 
   activateTab(tabs[0]);
 });
+
+/* =========================================
+   NAAREE FESTIVE OFFERS - TABS
+========================================= */
+
+(function () {
+  "use strict";
+
+  function initFestiveOffers() {
+    const section = document.getElementById("diwali-offers");
+
+    if (!section || section.dataset.nfoReady === "true") {
+      return;
+    }
+
+    const tabs = Array.from(section.querySelectorAll(".nfo-tabs .nfo-tab"));
+
+    const panels = Array.from(section.querySelectorAll(".nfo-panel"));
+
+    if (!tabs.length || !panels.length) return;
+
+    section.dataset.nfoReady = "true";
+
+    function activateTab(tab, moveFocus = false) {
+      const targetId = tab.getAttribute("data-nfo-target");
+
+      const targetPanel = panels.find((panel) => panel.id === targetId);
+
+      if (!targetPanel) return;
+
+      // Update tab buttons
+      tabs.forEach(function (item) {
+        const isActive = item === tab;
+
+        item.classList.toggle("active", isActive);
+        item.setAttribute("aria-selected", String(isActive));
+        item.tabIndex = isActive ? 0 : -1;
+      });
+
+      // Show the selected panel
+      panels.forEach(function (panel) {
+        const isActive = panel === targetPanel;
+
+        panel.hidden = !isActive;
+        panel.classList.toggle("active", isActive);
+      });
+
+      if (moveFocus) {
+        tab.focus();
+      }
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener("click", function () {
+        activateTab(tab);
+      });
+
+      tab.addEventListener("keydown", function (event) {
+        let nextIndex = index;
+
+        if (event.key === "ArrowRight") {
+          nextIndex = (index + 1) % tabs.length;
+        } else if (event.key === "ArrowLeft") {
+          nextIndex = (index - 1 + tabs.length) % tabs.length;
+        } else if (event.key === "Home") {
+          nextIndex = 0;
+        } else if (event.key === "End") {
+          nextIndex = tabs.length - 1;
+        } else {
+          return;
+        }
+
+        event.preventDefault();
+        activateTab(tabs[nextIndex], true);
+      });
+    });
+
+    // Default selected tab
+    const defaultTab =
+      tabs.find((tab) => tab.classList.contains("active")) || tabs[0];
+
+    activateTab(defaultTab);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initFestiveOffers);
+  } else {
+    initFestiveOffers();
+  }
+})();
